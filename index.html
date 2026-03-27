@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Knowledge of Sex｜性教育知識一頁式網站</title>
+  <style>
+    :root {
+      --bg: #0f172a;
+      --card: #111827;
+      --primary: #22d3ee;
+      --secondary: #a78bfa;
+      --text: #e5e7eb;
+      --muted: #94a3b8;
+      --ok: #34d399;
+      --warn: #fbbf24;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: "Noto Sans TC", "PingFang TC", "Microsoft JhengHei", sans-serif;
+      background: radial-gradient(circle at top, #1e293b 0%, var(--bg) 55%);
+      color: var(--text);
+      line-height: 1.65;
+    }
+
+    .container {
+      max-width: 980px;
+      margin: 0 auto;
+      padding: 24px;
+    }
+
+    header {
+      text-align: center;
+      padding: 48px 0 28px;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: clamp(1.8rem, 2.6vw, 2.8rem);
+      letter-spacing: 1px;
+      color: #f8fafc;
+    }
+
+    .subtitle {
+      margin-top: 12px;
+      color: var(--muted);
+      font-size: 1rem;
+    }
+
+    .grid {
+      display: grid;
+      gap: 16px;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      margin-bottom: 20px;
+    }
+
+    .card {
+      background: linear-gradient(165deg, #111827 0%, #0b1220 100%);
+      border: 1px solid rgba(148, 163, 184, 0.2);
+      border-radius: 16px;
+      padding: 18px;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+    }
+
+    .card h2, .card h3 {
+      margin-top: 0;
+      color: #f8fafc;
+    }
+
+    .tag {
+      display: inline-block;
+      padding: 3px 10px;
+      border-radius: 999px;
+      background: rgba(34, 211, 238, 0.15);
+      color: var(--primary);
+      font-size: 0.85rem;
+      margin-bottom: 8px;
+    }
+
+    ul { padding-left: 1.2rem; }
+
+    .pill-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: 12px;
+    }
+
+    .pill {
+      padding: 6px 12px;
+      border-radius: 999px;
+      background: rgba(167, 139, 250, 0.16);
+      color: #ddd6fe;
+      font-size: 0.9rem;
+    }
+
+    .quiz {
+      margin-top: 8px;
+    }
+
+    .q-item {
+      margin-bottom: 14px;
+      padding: 12px;
+      border-radius: 12px;
+      background: rgba(15, 23, 42, 0.7);
+      border: 1px solid rgba(148, 163, 184, 0.22);
+    }
+
+    .q-item label {
+      display: block;
+      margin: 7px 0;
+      cursor: pointer;
+    }
+
+    button {
+      border: 0;
+      border-radius: 12px;
+      padding: 10px 16px;
+      font-weight: 700;
+      cursor: pointer;
+      transition: 0.2s ease;
+    }
+
+    #checkBtn {
+      background: linear-gradient(90deg, var(--primary), var(--secondary));
+      color: #0b1020;
+    }
+
+    #checkBtn:hover { transform: translateY(-1px); }
+
+    .result {
+      margin-top: 12px;
+      padding: 10px 14px;
+      border-radius: 10px;
+      display: none;
+      font-weight: 700;
+    }
+
+    .result.ok {
+      background: rgba(52, 211, 153, 0.15);
+      color: var(--ok);
+      border: 1px solid rgba(52, 211, 153, 0.4);
+    }
+
+    .result.warn {
+      background: rgba(251, 191, 36, 0.12);
+      color: var(--warn);
+      border: 1px solid rgba(251, 191, 36, 0.4);
+    }
+
+    footer {
+      margin-top: 26px;
+      text-align: center;
+      color: var(--muted);
+      font-size: 0.9rem;
+      padding-bottom: 14px;
+    }
+
+    a { color: var(--primary); }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Knowledge of Sex</h1>
+      <p class="subtitle">以健康、尊重、同意為核心的性教育入門</p>
+    </header>
+
+    <section class="grid">
+      <article class="card">
+        <span class="tag">01｜身體與成長</span>
+        <h2>青春期會發生什麼？</h2>
+        <ul>
+          <li>身體變化屬於自然現象，每個人發生時間不同。</li>
+          <li>了解生理構造與功能，有助於建立正向身體觀。</li>
+          <li>遇到疑問可向可信任的大人或專業人員諮詢。</li>
+        </ul>
+      </article>
+
+      <article class="card">
+        <span class="tag">02｜同意（Consent）</span>
+        <h2>清楚同意 = 尊重彼此</h2>
+        <ul>
+          <li>同意必須是明確、自願、可隨時撤回。</li>
+          <li>沉默、壓力、醉酒或害怕都不是有效同意。</li>
+          <li>健康關係建立在溝通與尊重界線。</li>
+        </ul>
+      </article>
+
+      <article class="card">
+        <span class="tag">03｜保護自己</span>
+        <h2>安全與預防</h2>
+        <ul>
+          <li>正確使用保護措施可降低感染與非預期懷孕風險。</li>
+          <li>定期健康檢查有助於及早發現問題。</li>
+          <li>網路互動時，不分享私密影像與個資。</li>
+        </ul>
+      </article>
+    </section>
+
+    <section class="card">
+      <h3>重要關鍵詞</h3>
+      <div class="pill-list">
+        <span class="pill">尊重</span>
+        <span class="pill">同意</span>
+        <span class="pill">界線</span>
+        <span class="pill">溝通</span>
+        <span class="pill">健康</span>
+        <span class="pill">保護</span>
+      </div>
+    </section>
+
+    <section class="card quiz">
+      <h3>小測驗（3 題）</h3>
+
+      <div class="q-item">
+        <strong>1) 下列何者最符合「有效同意」？</strong>
+        <label><input type="radio" name="q1" value="0"> 對方沒有說話，所以應該可以</label>
+        <label><input type="radio" name="q1" value="1"> 對方清楚說「我願意」，且過程中可隨時改變想法</label>
+      </div>
+
+      <div class="q-item">
+        <strong>2) 為什麼要學習性教育？</strong>
+        <label><input type="radio" name="q2" value="1"> 幫助理解身體、界線與健康關係</label>
+        <label><input type="radio" name="q2" value="0"> 只有成年人需要知道</label>
+      </div>
+
+      <div class="q-item">
+        <strong>3) 線上互動時，較安全的做法是？</strong>
+        <label><input type="radio" name="q3" value="1"> 不傳送私密影像，並保護個人資訊</label>
+        <label><input type="radio" name="q3" value="0"> 相信陌生人不會轉傳內容</label>
+      </div>
+
+      <button id="checkBtn">查看結果</button>
+      <div id="result" class="result"></div>
+    </section>
+
+    <footer>
+      本頁為教育用途。若需進一步協助，可諮詢學校輔導、醫療院所或可信任的專業資源。
+    </footer>
+  </div>
+
+  <script>
+    const btn = document.getElementById('checkBtn');
+    const resultBox = document.getElementById('result');
+
+    btn.addEventListener('click', () => {
+      const answers = ['q1', 'q2', 'q3'];
+      let score = 0;
+      let answered = 0;
+
+      answers.forEach((name) => {
+        const selected = document.querySelector(`input[name="${name}"]:checked`);
+        if (selected) {
+          answered += 1;
+          score += Number(selected.value);
+        }
+      });
+
+      resultBox.style.display = 'block';
+
+      if (answered < answers.length) {
+        resultBox.className = 'result warn';
+        resultBox.textContent = '請先完成全部題目再查看結果。';
+        return;
+      }
+
+      resultBox.className = score === 3 ? 'result ok' : 'result warn';
+      resultBox.textContent = score === 3
+        ? `你答對 ${score}/3，太棒了！你已掌握核心概念。`
+        : `你答對 ${score}/3，繼續學習就會更熟悉！`; 
+    });
+  </script>
+</body>
+</html>
